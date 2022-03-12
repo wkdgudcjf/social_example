@@ -56,8 +56,8 @@ public class AuthTokenProvider {
                             .collect(Collectors.toList());
 
             log.debug("claims subject := [{}]", claims.getSubject());
-            MyUserDetails gwatopUserDetails = new MyUserDetails(userRepository.findByEmail(claims.getSubject()));
-            return new UsernamePasswordAuthenticationToken(gwatopUserDetails, authToken, authorities);
+            MyUserDetails myUserDetails = new MyUserDetails(userRepository.findByEmail(claims.getSubject()));
+            return new UsernamePasswordAuthenticationToken(myUserDetails, authToken, authorities);
         } else {
             throw new TokenValidFailedException();
         }
