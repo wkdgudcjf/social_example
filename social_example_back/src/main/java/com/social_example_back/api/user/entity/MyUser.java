@@ -112,7 +112,7 @@ public class MyUser {
         this.username = joinDTO.getName();
         this.profileImageUrl = imageUrl;
         this.providerType = ProviderType.LOCAL;
-        this.roleType = RoleType.STUDENT;
+        this.roleType = RoleType.USER;
         this.createdAt = createdAt;
         this.modifiedAt = modifiedAt;
 	}

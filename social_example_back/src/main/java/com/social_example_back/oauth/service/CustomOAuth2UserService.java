@@ -72,7 +72,7 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
                 userInfo.getName(),
                 userInfo.getImageUrl(),
                 providerType,
-                RoleType.STUDENT,
+                RoleType.USER,
                 "Y",
                 now,
                 now

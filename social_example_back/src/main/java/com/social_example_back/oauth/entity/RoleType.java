@@ -8,7 +8,7 @@ import java.util.Arrays;
 @Getter
 @AllArgsConstructor
 public enum RoleType {
-	STUDENT("ROLE_USER", "유저 권한"),
+	USER("ROLE_USER", "유저 권한"),
     ADMIN("ROLE_ADMIN", "관리자 권한"),
     GUEST("GUEST", "게스트 권한");
 
