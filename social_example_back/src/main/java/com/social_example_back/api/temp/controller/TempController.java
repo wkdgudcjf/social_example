@@ -16,7 +16,7 @@ import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/v1/class")
+@RequestMapping("/api/v1/temp")
 public class TempController {
 	
 	private final TempService tempService;
